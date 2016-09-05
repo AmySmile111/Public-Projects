@@ -1,0 +1,248 @@
+/*
+
+   Home Style Sheet
+   Author: Xin Tian
+   Date:   2/11/2016
+
+   Filename: homestyle.css
+*/
+
+@font-face 
+{
+    font-family: 'CloisterBlack';
+   src: url('CloisterBlack.eot');
+}
+
+ section, footer, nav , aside 
+{
+   display: block;
+}
+
+body 
+{
+  position:relative;
+
+  margin: 0px auto;
+  padding: 0px;
+  line-height: 1.5em;
+  width: 98%;
+  max-width: 800px;
+  min-width: 1200px;
+  font-family: Verdana, Geneva, sans-serif
+}
+
+
+nav 
+{
+  height:60px;
+  width: 100%;
+  background-color :lightpink;
+ 
+
+}
+
+
+a
+{
+   text-decoration:none;
+
+}
+
+a:hover
+{
+   color: slategrey;
+}
+#homeTitleIn{
+    float:left;
+  
+    color:white;
+    margin-left:3%;
+    margin-top:19px;
+}
+#rightTitle2{
+    color:white;
+    right:20%;
+    margin-top:2.7%;
+    float:right;
+}
+
+
+#bag{
+    
+     color:white;
+    float:right;
+    margin-top:2.7%;
+    margin-right:2.7%;
+    margin-left:2.7%;
+    
+    
+    
+}
+
+
+
+#rightTitle1{
+    color:white;
+    float:right;
+    margin-top:2.7%;
+    margin-right:2.7%;
+    margin-left:2.7%;
+}
+
+
+#homeTitleInLog{
+    float:left;
+  
+    color:white;
+    margin-left:3%;
+    margin-top:19px;
+}
+#rightTitle2Log{
+    color:white;
+    right:20%;
+    margin-top:2.7%;
+    float:right;
+}
+#rightTitle3Log{
+     color:white;
+    right:10%;
+    margin-top:2.7%;
+    float:right;
+}
+
+#bagLog{
+    
+     color:white;
+    float:right;
+    margin-top:2.7%;
+    margin-right:2.7%;
+    margin-left:2.7%;
+  
+}
+
+
+
+#rightTitle1Log{
+    color:white;
+    float:right;
+    margin-top:2.7%;
+    margin-right:2.7%;
+    margin-left:2.7%;
+}
+
+aside
+{
+    float:left;
+    width:15%;
+    height:933px;
+    /*border-left : 2px solid grey;*/
+    border-top: 2px solid white;
+    //background-color:rgba(255, 102, 153,0.6);
+}
+
+
+span{
+    margin: 0;
+    padding: 0;
+        }
+.list{
+    border-top:2px solid grey;
+}
+ ul li {
+    list-style: none;
+    
+        }
+
+#menu {
+    width: 150px;
+    background-color:rgba(255, 102, 153,0);
+    padding: 10px;
+    margin: 30px auto 0;
+}
+
+#menu li {
+    padding-left: 0px;
+    margin-bottom: 3px;
+}
+
+#menu span {
+    display: block;
+    height: 20px;
+    padding-left: 20px;
+    line-height: 20px;
+    background: #fff /*url(close.gif) 5px 5px no-repeat*/;
+    cursor: pointer;
+}
+
+ #menu li ul {
+                display: none;
+            }
+
+.size{
+  display:block;
+  display:inline;
+     background-color:#ffe6ee;
+     width:50px;
+     text-align:center;
+     margin-right:15px;
+     border-radius :50%;
+}
+.color{
+  display:block;
+  display:inline;
+     background-color:#ffe6ee;
+     width:50px;
+     text-align:center;
+     margin-right:15px;
+     border-radius :50%;
+     border:0.5px solid black;
+}
+input[type="text"] 
+{
+  
+   margin: 10px auto;
+   width: 140px;
+}
+footer 
+{
+
+  width: 100%;
+  clear: left;
+  text-align: center;
+  margin-top: 5px;
+}
+
+footer address 
+{
+
+  width: 100%;
+  clear: left;
+  font-size: 0.8em;
+  font-style: italic;
+  margin-top: 20px;
+  border-top: 4px solid lightpink ;
+}
+.hplink{
+    color: black;
+}
+.atd{
+    text-align:center;
+    padding-left:15px;
+    padding-right:15px;
+}
+#emptyMenu{
+    display:block;
+    height:400px;
+    
+}
+/*#cartForm {
+    border-collapse: collapse;
+     border: 1px solid black;
+}
+
+#cartForm th {
+   border: 1px solid black;
+}
+#cartForm td {
+   border: 1px solid black;
+}*/

@@ -1,0 +1,133 @@
+﻿
+body {
+   // background-color:mistyrose  ;
+    position:relative;
+}
+
+
+
+header {
+
+    font-size: 4em;
+    text-align : center ;
+    letter-spacing: 7px;
+    font-family:Book Antiqua;
+    font-weight: bold;
+    color: pink;
+    /*background: url("kitty.png") no-repeat ;
+    opacity: 0.6;*/
+
+}
+
+
+#left   {
+       position:absolute;
+       top:5em;
+       left:0.1em;
+    
+   }
+
+#main {
+    
+    float:left;
+    margin-left :5%;
+   margin-top :20px;
+    
+}
+
+#right{
+   
+      /*margin-left :70%;
+   margin-top :20px;
+   /*border-bottom :2px solid purple;*/
+   line-height :80%;
+   color:mediumpurple ;
+
+}
+#r1 {
+    
+     margin-left :60%;
+   margin-top :20px;
+   border-bottom :2px solid purple;
+   line-height :80%;
+   color:mediumpurple ;
+}
+
+
+
+#r2 {
+    
+     margin-left :60%;
+   border-bottom :2px solid purple ;
+   line-height :50%;
+   color:mediumpurple ;
+}
+
+    #r2 ins {
+    font-size :70%;
+
+    }
+
+input[type=number] {
+    width:10%;
+    text-align:center ;
+}
+
+#detail {
+    margin-left: 60%;
+    border-bottom: 2px solid purple;
+    /*line-height: 50%;*/
+    color: mediumpurple;
+}
+
+#r22 {
+    margin-bottom :10px;
+
+
+}
+    #detail p {
+
+         line-height: 100%;
+         margin-top :-0.2em;
+    }
+
+    #size table, th, td {
+   border: 1px solid black;
+
+}
+  #size table {
+    border-collapse: collapse;
+    text-align :center ;
+    width:100%;
+    height:8em;
+}
+
+#size {
+     margin-left: 60%;
+       margin-top :1em;
+    color: mediumpurple;
+}
+
+#button {
+
+     margin-left: 70%;
+       margin-top :1em;
+      
+      
+
+}
+
+    #button button {
+         background-color:palevioletred  ;
+        border: none;
+        width:100%;
+        text-align: center;
+        color:darkviolet  ;
+    }
+  
+ #button  input [type="submit"]
+  {
+      margin-left: 80%;
+      background:palevioletred  ;
+      
+  }

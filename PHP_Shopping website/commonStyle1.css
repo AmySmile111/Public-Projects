@@ -1,0 +1,48 @@
+.noBG{
+    margin-top:4%;
+    margin-left: 24%;
+    margin-right:10%;
+     border:2px solid;
+    border-color: pink;
+    border-radius: 20px;
+   
+ 
+}
+.loginRegister
+{
+    border:2px dotted pink;
+    // border-color: #ffe6e6;
+    border-radius: 20px;
+    margin-top:10%;
+    margin-left: 24%;
+    margin-right:10%;
+    background-image: url(images/fieldset5.png);
+   background-size:100% 100%;
+   background-repeat:no-repeat;
+       
+}
+
+form ul li {
+    text-align: center;
+}
+form p{
+    text-align:center;
+}
+.buttons-set{
+    margin:5%
+}
+#shippingBilling{
+   // border:1px solid pink;
+        float:right;
+        padding-right:30px;
+   
+}
+#PaymentDelivery{
+    border-left:2px solid pink;
+        float:right;
+        padding-right:30px;
+       
+}
+#infoSummit{
+    clear:right;
+}
