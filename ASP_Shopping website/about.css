@@ -1,0 +1,58 @@
+body {
+      position: relative;
+      /*width:100%;*/
+      }
+
+nav.transbox {
+
+  position:absolute;
+    margin: 10px;
+  background-color: #ffffff;
+ 
+  opacity: 0.6;
+  filter: alpha(opacity=60); 
+   position: absolute;
+    left: 70%;
+    top: 5%;
+    padding:10px;
+    border-style: dotted;
+ border: dotted pink ;
+}
+nav.transbox p,ul li  {
+     font-weight: bold;
+    font-size: 100%;
+    color: #000000;
+    
+     }
+    
+ nav.transbox h1 {
+     font-weight: bold;
+    font-size: 120%;
+    color: hotpink ;
+    
+     }
+
+
+div.center {
+    position: absolute;
+    font-size: 2.5em;
+    left: 75%;
+    top: 0%;
+    letter-spacing: 7px;
+    font-family:Book Antiqua;
+    
+}
+
+div.center a{
+    text-decoration:none;
+    color:hotpink;
+}
+html { 
+  background: url(images/about.png) no-repeat center fixed; 
+  background-size: cover;
+}
+
+
+
+
+  
