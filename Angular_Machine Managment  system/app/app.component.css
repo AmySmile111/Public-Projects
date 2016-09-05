@@ -1,0 +1,82 @@
+#li{ font-size:25px; margin-top:-50px;margin-left:58% ;font-style:italic;color:#4d0066}
+  
+#link1{ font-size:30px ; }
+
+#link1:hover {color: #8B0000 !important;  }
+
+#link2{font-size:30px ;}
+      
+#link2:hover {
+  
+      color: #8B0000 !important;
+  }
+
+
+
+     
+  
+  
+      
+  /*  responsive  design  */     
+     
+       
+ @media screen and (min-width: 970px) and (max-width: 1200px)
+      {
+
+           #li{ font-size:25px; margin-top:-20px;margin-left:40% ;font-style:italic;color:#4d0066};
+
+      }  
+
+@media screen and (min-width: 1200px)
+      {
+
+           #li{ font-size:26px; margin-top:-50px;margin-left:40% ;font-style:italic;color:#4d0066};
+
+      }  
+
+  @media screen and (max-width: 425px)
+    {
+
+        #li{ font-size:15px; margin-top:-20px;margin-left:0% ;font-style:italic;color:#4d0066}
+        #list1{margin-left:0!important ;padding-left: 0 !important}
+        #link1{ font-size:15px ; }
+        #link2{ font-size:15px ; }
+        li{ text-align: center}
+     
+
+    }
+
+
+
+ @media screen and (max-width: 768px) and (min-width: 425px){ 
+
+    #li{ font-size:25px; margin-top:-30px;margin-left:30% ;font-style:italic;color:#4d0066;}
+    #link1{ font-size:20px ; }
+    #link2{ font-size:20px ; }
+     li {float:left;}
+     
+
+
+ }
+
+  
+
+ @media screen and (max-width: 730px) and (min-width: 576px){ 
+
+    #li{ font-size:20px; margin-top:-30px;margin-left:35% ;font-style:italic;color:#4d0066;}
+    #link1{ font-size:20px ; }
+    #link2{ font-size:20px ; }
+     li {float:left;}
+     
+
+
+ }
+ 
+ 
+
+
+
+
+
+
+

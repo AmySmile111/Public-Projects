@@ -1,0 +1,99 @@
+
+
+<div class="container-fluid" id="mainContainer">
+   
+  <div id="os">
+<select  #t (change)="onSelect(t.value)"  class="col-md-1 ">
+   <option value="aa">OS</option>
+   <option *ngFor='let li of newArr1'>{{li.OS_MAIN}}</option>  
+</select>
+  </div>
+      
+<div class="dropbox">
+<select #t2 (change)="onSelect2(t2.value)" id="dropbox2" class="col-md-1 ">
+   <option value="aa">Version</option>
+   <option *ngFor='let li of newArr2'>{{li.OS_VERSION}}</option>
+</select>
+</div> 
+<div class="dropbox">
+<select #t3 (change)="onSelect3(t3.value)" id="dropbox3" class="col-md-1 ">
+   <option value="aa">Reserved</option>
+   <option *ngFor='let li of newArr3'>{{li.RESERVED_TO}}</option>
+</select>
+</div>
+
+<div class="dropbox">
+<select #t4 (change)="onSelect4(t4.value)" id="dropbox4" class="col-md-1 ">
+   <option value="aa">Project</option>
+   <option *ngFor='let li of newArr4'>{{li.CURRENT_PROJECT}}</option>
+</select>
+</div>
+
+<div class="dropbox">
+<select #t5 (change)="onSelect5(t5.value)" id="dropbox5" class="col-md-1 ">
+   <option value="aa">Type</option>
+   <option *ngFor='let li of newArr5'>{{li.MACHINE_TYPE}}</option>
+</select>
+</div>
+<div class="dropbox">
+<select #t6 (change)="onSelect6(t6.value)" id="dropbox6" class="col-md-1">
+   <option value="aa">Restriction</option>
+   <option *ngFor='let li of newArr6'>{{li.RESTRICTION}}</option>
+</select>
+</div>
+
+
+ 
+
+<table class="table table-striped" border="1" style="text-align:center">
+  <tr >  
+    <th style="width:11% ; text-align:center" class="col-md-1 col-md-offset-2"> Machine Name</th>
+    <th style="width:11%;text-align:center" class="col-md-1">OS</th> 
+    <th style="width:11%;text-align:center" class="col-md-1">OS Version</th>
+    <th style="width:11%;text-align:center" class="col-md-1">Reserved To</th>
+    <th style="width:11%;text-align:center" class="col-md-1">Reserved Date</th>
+    <th style="width:11%;text-align:center" class="col-md-1">Current Project</th>
+    <th style="width:11%;text-align:center" class="col-md-1">Machine Type</th> 
+    <th style="width:11%;text-align:center" class="col-md-1">Wait List</th>
+    <th style="width:15%;text-align:center" class="col-md-1">Restriction</th>
+ 
+ </tr>
+
+
+
+  
+    <tr *ngFor=" let li of list" [hidden]="show">
+    <td>{{li.MACHINE_NAME}}</td>
+    <td>{{li.OS_MAIN}}</td> 
+    <td>{{li.OS_VERSION}}</td>
+<td  (click) =reserve(li,list) [style.color]="li.RESERVED_TO=='Available'? 'green':'black'" 
+   [title]= "li.RESERVED_TO=='Available'? 'Click me to add your name': 'Click me to delete your name'">{{li.RESERVED_TO}}
+ </td>                                 
+    
+    <td>{{li.DATE_RESERVED}}</td>
+    <td>{{li.CURRENT_PROJECT}}</td>
+    <td>{{li.MACHINE_TYPE}}</td>
+    <td (click) =reserve2(li,list) [title]= "deleteSign? 'click me to add your name to waiting list': 'click me to delete your name to waiting list'"> {{li.SOFTWARE_VERSION}}</td>
+    <td>{{li.RESTRICTION}}</td>
+
+  </tr>
+ <tr *ngFor=" let re of result" [hidden]="show1">
+    <td>{{re.MACHINE_NAME}}</td>
+    <td>{{re.OS_MAIN}}</td> 
+    <td>{{re.OS_VERSION}}</td>
+    <td  (click) =reserve(re,result) [style.color]="re.RESERVED_TO=='Available'? 'green':'black'"
+    [title]= "re.RESERVED_TO=='Available'? 'Click me to add your name': 'Click me to delete your name'">{{re.RESERVED_TO}}</td>
+    <td>{{re.DATE_RESERVED}}</td>
+    <td>{{re.CURRENT_PROJECT}}</td>
+    <td>{{re.MACHINE_TYPE}}</td>
+    <td (click) =reserve2(re,result) [title]= "deleteSign? 'click me to add your name to waiting list': 'click me to delete your name to waiting list'">{{re.SOFTWARE_VERSION}}</td>
+    <td>{{re.RESTRICTION}}</td>
+  </tr>
+    
+
+    
+</table>
+
+ 
+
+</div>

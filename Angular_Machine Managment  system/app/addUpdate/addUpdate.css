@@ -1,0 +1,42 @@
+.background { background-color:#ecf2f8;border-radius: 8px}
+
+.dropbox select{
+
+  background: transparent;
+   width: 152px;
+   padding: 5px ;
+   font-size: 13px;
+   line-height: 1;
+   border: none;
+    cursor: pointer;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+
+}
+
+
+.dropbox{ width: 150px;
+   height: 34px;
+    overflow: hidden;
+   background:white;
+   border: 2px solid grey;
+    border-radius: 5px;
+ text-align: center;
+   margin-top:1em;
+   float:left;       
+  margin-right:40px;
+ 
+   }
+
+
+
+#owner{margin-top:1em;}
+.note{margin-top:1em;}
+.software{margin-top:2em;}
+
+
+.save{width:90px;margin-right:40px;margin-top:90px;float:right;background-color: #e7e7e7;border-radius: 6px;font-size:14px}
+
+
+legend{color:#0000b3;font-family: "Times New Roman", Times, serif;background: #e6e6ff}

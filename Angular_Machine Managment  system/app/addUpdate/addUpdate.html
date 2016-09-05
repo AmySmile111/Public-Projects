@@ -1,0 +1,79 @@
+<div class="background" >
+<form class="form-horizontal" role="form" style="font-size:20px" #addForm="ngForm" (ngSubmit)="onSubmit(name.value,ip.value,Version.value,Reserved.value,wait.value,team.value,Date.value,domain.value,platform.value,type.value,project.value,
+team.value,restricted.value,load.value,Note.value)">
+
+    <fieldset>
+      <legend>Add/Update machines:</legend>
+
+    <input type="text"  #name ngControl="machineName" required placeholder="Machine Name" id="Mname">
+    <input type="text" placeholder="IP" #ip ngControl="ip" required pattern="^([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})$">
+    <input type="text" placeholder="Version"  #Version ngControl="Version" >
+    <input type="text" placeholder="Reserved"  #Reserved ngControl="Reserved">
+    <input type="text" placeholder="Waiting"  #wait ngControl="wait">
+    <input type="text" placeholder="Owner" #team ngControl="team"  id="owner">
+     <input type="date" placeholder="Date"  #Date ngControl="Date">
+  <div >
+     <div class="dropbox" id="domain">
+    <select #domain  class="col-md-2 " required>
+   <option value="" text-align="center">Domain</option>
+   <option *ngFor='let li of newArr1'>{{li.DOMAIN}}</option>
+</select>
+</div>
+
+
+
+ <div class="dropbox" >
+   <select #platform  class="col-md-2 " required>
+   <option value="">Platform</option>
+   <option *ngFor='let li of newArr2'>{{li.OS_MAIN}}</option>
+</select>
+</div>
+
+ <div class="dropbox" >
+    <select #type  class="col-md-2 " required>
+   <option value="">Machine Type</option>
+   <option *ngFor='let li of newArr3'>{{li.MACHINE_TYPE}}</option>
+</select>
+</div>
+
+
+ <div class="dropbox" >
+    <select #project  class="col-md-2 " required>
+   <option value="">Current Project</option>
+   <option *ngFor='let li of newArr4'>{{li.CURRENT_PROJECT}}</option>
+</select>
+</div>
+
+ <div class="dropbox" >
+    <select #team  class="col-md-2 " required>
+   <option value="">Team Owner</option>
+   <option *ngFor='let li of newArr5'>{{li.TEAM}}</option>
+</select>
+</div>
+
+ <div class="dropbox" >
+    <select #restricted  class="col-md-2 " required>
+   <option value="">Restricted to</option>
+   <option *ngFor='let li of newArr6'>{{li.RESERVED_TO}}</option>
+</select>
+</div>
+
+</div>
+<div>
+<input type="text" #load class="software" ngControl="load" style="height:100px;width:700px;font-size:15px" placeholder="Provide text of custom software loaded:
+EDA drivers, special compilers, specific database versions"> 
+ <input type="text"  class="note" style="height:100px;width:700px;font-size:15px" #Note ngControl="Note" placeholder="Provide text of any special notes about the machine:
+IPv6 only,  user has no sudo permissions, etc.">
+</div>
+
+ 
+ 
+   <button  type="submit" class="save" >Save</button>
+ </fieldset>
+</form>
+</div>
+
+
+
+
+

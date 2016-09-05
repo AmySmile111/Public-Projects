@@ -1,0 +1,97 @@
+<h2>You can edit all the machines:</h2>
+  <table class="table table-striped" border="1" style="width:100%;text-align:center;margin-left:0" [hidden]="show">
+  <tr>  
+    <th style="width:11% ; text-align:center">Machine Name</th>
+    <th style="width:11%;text-align:center">IP</th> 
+    <th style="width:11%;text-align:center">OS</th> 
+    <th style="width:11%;text-align:center">OS Version</th>
+    <th style="width:11%;text-align:center">Reserved To</th>
+    <th style="width:11%;text-align:center">Reserved Date</th>
+    <th style="width:11%;text-align:center">Current Project</th>
+    <th style="width:11%;text-align:center">Machine Type</th> 
+    <th style="width:11%;text-align:center">Wait List</th>
+    <th style="width:15%;text-align:center">Restriction</th>
+    <th style="width:15%;text-align:center">Software Loaded</th>
+    <th style="width:15%;text-align:center">Owner</th>
+    <th style="width:15%;text-align:center">Domain</th>
+    <th style="width:15%;text-align:center">Team</th>
+    <th style="width:15%;text-align:center">Notes</th>
+    <th style="width:15%;text-align:center">Update</th>
+ 
+ </tr>
+
+ <tr *ngFor=" let li of listAll">
+    <td>{{li.MACHINE_NAME}}</td>
+    <td>{{li.IP_ADDRESS}}</td>
+    <td>{{li.OS_MAIN}}</td> 
+    <td>{{li.OS_VERSION}}</td>
+    <td>{{li.RESERVED_TO}}</td>
+    <td>{{li.DATE_RESERVED}}</td>
+    <td>{{li.CURRENT_PROJECT}}</td>
+    <td>{{li.MACHINE_TYPE}}</td>
+    <td>{{li.SOFTWARE_VERSION}}</td>
+    <td>{{li.RESTRICTION}}</td>
+    <td>{{li.SOFTWARE_LOADED}}</td>
+    <td>{{li.OWNER}}</td>
+    <td>{{li.DOMAIN}}</td>
+    <td>{{li.TEAM}}</td>
+    <td>{{li.NOTES}}</td>
+    <td><button (click)="update(li)" id="up">Update</button></td>
+  </tr>   
+</table>
+
+
+
+
+
+<table class="table table-striped" border="1" style="width:100%;text-align:center" [hidden]="!show">
+  <tr>  
+    <th style="width:11% ; text-align:center">Machine Name</th>
+    <th style="width:11%;text-align:center">IP</th> 
+    <th style="width:11%;text-align:center">OS</th> 
+    <th style="width:11%;text-align:center">OS Version</th>
+    <th style="width:11%;text-align:center">Reserved To</th>
+    <th style="width:11%;text-align:center">Reserved Date</th>
+    <th style="width:11%;text-align:center">Current Project</th>
+ </tr>
+<tr>
+    <td><input [(ngModel)]="name"></td>
+    <td><input [(ngModel)]="ip"></td>
+    <td><input [(ngModel)]="main"></td>
+    <td><input [(ngModel)]="version"></td>
+    <td><input [(ngModel)]="reserve"></td>
+    <td><input [(ngModel)]="date"></td>
+    <td><input [(ngModel)]="project"></td>
+  </tr>
+
+ <tr>  
+   <th style="width:11%;text-align:center">Machine Type</th> 
+   <th style="width:11%;text-align:center">Wait List</th>
+   <th style="width:15%;text-align:center">Restriction</th>
+   <th style="width:15%;text-align:center">Software Loaded</th>
+   <th style="width:15%;text-align:center">Owner</th>
+   <th style="width:15%;text-align:center">Domain</th>
+   <th style="width:15%;text-align:center">Team</th>
+</tr>
+
+
+<tr>
+   
+  <td><input [(ngModel)]="type"></td>
+  <td><input [(ngModel)]="Sversion"></td>
+  <td><input [(ngModel)]="restriction"></td>
+  <td><input [(ngModel)]="load"></td>
+  <td><input [(ngModel)]="owner"></td>
+  <td><input [(ngModel)]="domain"></td>
+  <td><input [(ngModel)]="team"></td>
+</tr>
+
+<tr rowspan="3" ><th colspan="4" style="text-align:center">Note</th></tr>
+<tr ><td style="text-align:center" colspan="4"><input [(ngModel)]="note" style="width:100%"></td></tr>
+
+    
+</table>
+
+<button (click)="save()" id="save" [hidden]="!show" style="margin-right:30px">Update</button>
+<button (click)="cancel()" id="cancel" [hidden]="!show">Cancle</button>
+

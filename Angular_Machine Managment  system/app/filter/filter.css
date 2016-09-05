@@ -1,0 +1,85 @@
+
+.dropbox select{
+
+    background: transparent;
+   width: 150px;
+   padding: 5px;
+   font-size: 13px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+
+
+
+
+}
+
+
+.dropbox{ width: 150px;
+   height: 34px;
+   overflow: hidden;
+   background: #ecf2f8;
+   border: 2px solid #d6e0f5;
+    border-radius: 5px;
+   text-align: center;
+   }
+
+
+
+#os{width: 150px;
+   height: 34px;
+   overflow: hidden;
+   background: #ecf2f8;
+    border: 2px solid #d6e0f5;
+    border-radius: 5px;
+   text-align: center;}
+
+   #os select{
+
+    background: transparent;
+   width: 150px;
+   padding: 5px;
+   font-size: 13px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+
+
+
+
+}
+
+
+
+#mainContainer div{display: inline-block}
+
+
+th {
+    background-color: #cce6ff;
+
+}
+
+
+
+ .tooltiptext {
+   
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+
